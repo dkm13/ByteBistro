@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://kit.fontawesome.com/049c2c6974.js" crossorigin="anonymous"></script>
+    <title>Byte Bistro</title>
+
+    <script>
+        $(document).ready(function () {
+          $("#icon").click(function () {
+            $("#navul").toggleClass("show");
+          });
+        });
+      </script>
+</head>
+<body>
+
+    <section class="navbar">
+        <nav>
+           <a href="./index.html"><img src="./images/logo-nobg.png" alt="logo"></a>
+          <ul id="navul">
+              <li><a href="https://bokarestaurantgroup.tripleseat.com/">Private dining</a></li>
+              <li><a href="./index.html#about">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="./index.html#contact">Contact</a></li>
+              <li><a href="./index.html#reserve">Reserve</a></li>
+          </ul>
+          <!-- <label id="icon">
+              <i onclick="reChange()" class="fas fa-bars"></i>
+          </label> -->
+          <label id="icon">
+            <i id="ic2" onclick="reChange('ic2')" class="fas fa-bars"></i>
+        </label>
+    </section>
+
+    <section class="menu-theme">
+        <h3>Menu</h3>
+        <div class="menu-img">
+            <img id="firstm" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/11/14/0/FN_healthy-fast-food-applebees-steak_s4x3.jpg.rend.hgtvcom.616.462.suffix/1510694267044.jpeg" alt="menu">
+            <img id="secondm" src="https://assets.gqindia.com/photos/6213cbed18140d747a9b0a6e/16:9/w_1920,h_1080,c_limit/new%20restaurant%20menus%20in%20Mumbai.jpg" alt="menu">
+
+        </div>
+    </section>
+
+
+    <h3 id="menu-exp">Explore our menu</h3>
+    <section class="menu-list">
+        <div class="menu-item">
+          <h2>Appetizer 1</h2>
+          <p>Description of appetizer 1.</p>
+          <p>Price: $9.99</p>
+        </div>
+    
+        <div class="menu-item">
+          <h2>Main Course 1</h2>
+          <p>Description of main course 1.</p>
+          <p>Price: $19.99</p>
+        </div>
+    
+        <div class="menu-item">
+          <h2>Dessert 1</h2>
+          <p>Description of dessert 1.</p>
+          <p>Price: $7.99</p>
+        </div>
+        <div class="menu-item">
+          <h2>Dessert 1</h2>
+          <p>Description of dessert 1.</p>
+          <p>Price: $7.99</p>
+        </div>
+        <div class="menu-item">
+          <h2>Dessert 1</h2>
+          <p>Description of dessert 1.</p>
+          <p>Price: $7.99</p>
+        </div>
+        <div class="menu-item">
+          <h2>Dessert 1</h2>
+          <p>Description of dessert 1.</p>
+          <p>Price: $7.99</p>
+        </div>
+        <div class="menu-item">
+          <h2>Dessert 1</h2>
+          <p>Description of dessert 1.</p>
+          <p>Price: $7.99</p>
+        </div>
+        <div class="menu-item">
+          <h2>Dessert 1</h2>
+          <p>Description of dessert 1.</p>
+          <p>Price: $7.99</p>
+        </div>
+        <div class="menu-item">
+          <h2>Dessert 1</h2>
+          <p>Description of dessert 1.</p>
+          <p>Price: $7.99</p>
+        </div>
+    
+        <!-- Add more items as needed -->
+    
+      </section>
+
+
+    <section class="reserve">
+        <div class="reserve-box">
+          <h3>Reserve:</h3>
+          <div class="reserve-form">
+            <input type="date" name="date"><br/>
+            <input type="time" name="time" ><br/>
+            <select class="form-select" aria-label="Default select example">
+              <option selected value="2">2 people</option>
+              <option value="1">One Person</option>
+              <option value="3">Three People</option>
+              <option value="4">Four People</option>
+              <option value="5">Five People</option>
+              <option value="6">Six People</option>
+              <option value="7">Seven People</option>
+              <option value="8">Eight People</option>
+              <option value="9">Nine People</option>
+              <option value="10">Ten People</option>
+            </select><br/>
+              <a href="https://www.opentable.com/">Search Table</a>
+          </div>
+          
+        </div>
+      </section>
+
+
+    <section class="footer" id="contact">
+        <div class="footer-container">
+
+          <div class="footcon newsletter">
+            <h2>Newsletter</h2>
+            <p>Join our mailing list and keep up with all the exciting things.</p>
+            <input type="email" placeholder="xyz@example.com"/>
+            <button type="submit">Sub</button>
+          </div>
+        
+
+          <div class="footcon latest">
+            <h2>News:</h2>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Elementum integer enim neque volutpat ac tincidunt. Ac tortor vitae purus faucibus 
+          </div>
+       
+
+        <div class="footcon address">
+          <h2>Address</h2>
+          <p>219 NYC Down street</p>
+          <p>121-323-565</p>
+          <p>byte_bistro@info.com</p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div> 
+      </div>
+
+      <p id="links"><a href="https://bokarestaurantgroup.tripleseat.com/">Private dining</a> | 
+        <a href="./index.html#about">About</a> | 
+        <a href="#">Menu</a> | 
+        <a href="./index.html#contact">Contact</a> |
+        <a href="./index.html#reserve">Reserve</a>
+     </p>
+     <p id="copy"> © 2023 ByteBistro, LLC. All Rights Reserved</p>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/049c2c6974.js" crossorigin="anonymous"></script>
+    <title>Byte Bistro</title>
+
+    <script>
+        $(document).ready(function () {
+          $("#icon").click(function () {
+            $("#navul").toggleClass("show");
+          });
+        });
+      </script>
+</head>
+<body onload="displayReminder()">
+    <section class="navbar">
+        <nav>
+           <a href="#"><img src="./images/logo-nobg.png" alt="logo"></a>
+          <ul id="navul">
+              <li><a href="https://bokarestaurantgroup.tripleseat.com/">Private dining</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#reserve">Reserve</a></li>
+          </ul>
+          <label id="icon">
+            <i id="ic2" onclick="reChange('ic2')" class="fas fa-bars"></i>
+        </label>
+      </section>
+
+
+
+      <!-- Event reminder-->
+      <!-- Event reminder-->
+      <!-- Event reminder-->
+      <div class="event-reminder" id="event-reminder">
+        <i onclick="closeReminder()" class="fas fa-times"></i>
+        <h3>New Year's Eve Event</h3>
+        <p style="font-weight: bold;">31 december</p>
+        <p>Come and celebrate the dawn of the New Year at Byte Bistro,
+           where culinary excellence, and festive cheer create an extraordinary experience.</p>
+          <a href="https://www.opentable.com/">Reserve</a>
+      </div>
+
+
+      <!-- home slideshow -->
+      <section class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides">
+          <img src="https://interiordesign.net/wp-content/uploads/2022/10/Interior-Design-iCrave-53-idx221001_icrave10-2-headercrop-1024x512.png" alt="Slide 1">
+        </div>
+      
+        <div class="mySlides">
+          <img src="https://interiordesign.net/wp-content/uploads/2022/10/Interior-Design-iCrave-53-idx221001_icrave03-1024x644.jpg" alt="Slide 2">
+        </div>
+      
+        <div class="mySlides">
+          <img src="https://img.freepik.com/premium-photo/photo-closeup-shot-delicious-food_829042-89.jpg" alt="Slide 3">
+        </div>
+      
+        <!-- Navigation dots -->
+        <div class="dots" style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="con-container">
+            <div class="box box1">
+            <h3>Address</h3>
+            <p>219 NYC Down street</p>
+            <a href="#">Directions</a>
+        </div>
+        <div class="box box2">
+            <h3>Hours</h3>
+            <p class="important">Sunday - Thursday</p>
+            <p>4:30pm - 10pm</p>
+            <p class="important">Friday & Saturday</p>
+            <p>4:30pm - 11pm</p>
+        </div>
+        <div class="box box3">
+            <h3>Contact</h3>
+            <a href="tel:+121323565">121-323-565</a><br/>
+            <a href="mailto:byte_bistro@info.com">byte_bistro@info.com</a>
+        </div>
+        </div>
+        
+      </section>
+
+      <div class="parallax"></div>
+
+      <section class="about" id="about">
+            <div class="about-container">
+                <div class="image">
+                    <img src="./images/restaurant1" alt="restaurant1" />
+                </div>
+                <div class="description">
+                    <h3>Byte Bistro Restaurant</h3>
+                    <p>Welcome to ByteBistro, where culinary art meets 
+                        cutting-edge technology in a symphony of flavors and
+                        innovation. Our bistro is not just a dining
+                          experience; it's a journey into the future of gastronomy. 
+                          Immerse yourself in the ambiance of sleek, modern design and an
+                           atmosphere
+                           buzzing with the energy of creativity.</p>
+                </div>
+            </div>
+      </section>
+
+      <section class="reserve" id="reserve">
+        <div class="reserve-box">
+          <h3>Reserve:</h3>
+          <div class="reserve-form">
+            <input type="date" name="date"><br/>
+            <input type="time" name="time" ><br/>
+            <select class="form-select" aria-label="Default select example">
+              <option selected value="2">2 people</option>
+              <option value="1">One Person</option>
+              <option value="3">Three People</option>
+              <option value="4">Four People</option>
+              <option value="5">Five People</option>
+              <option value="6">Six People</option>
+              <option value="7">Seven People</option>
+              <option value="8">Eight People</option>
+              <option value="9">Nine People</option>
+              <option value="10">Ten People</option>
+            </select><br/>
+              <a href="https://www.opentable.com/">Search Table</a>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="happenings">
+        <h3>Events</h3>
+        <div class="happenings-con">
+          <div class="happenings-img">
+            <img src="https://www.partstown.com/about-us/wp-content/uploads/2019/12/New-Years-Eve-Champagne-Flutes-New-Years-Eve-Party-Ideas-for-Your-Restaurant.png" alt="happenings">
+          </div>
+          <div class="happenings-txt">
+            <h4>New year Event</h4>
+            <p>Come and celebrate the dawn of the New Year at Byte Bistro, where culinary excellence,
+               and festive cheer create an extraordinary experience.
+            </p>
+            <p>Byte Bistro's state-of-the-art technology extends beyond the kitchen to enhance your event experience.</p>
+            <a href="https://www.opentable.com/">Reserve</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="footer">
+        <div class="footer-container">
+
+          <div class="footcon newsletter">
+            <h2>Newsletter</h2>
+            <p>Join our mailing list and keep up with all the exciting things.</p>
+            <input type="email" placeholder="xyz@example.com"/>
+            <button type="submit">Sub</button>
+          </div>
+        
+
+          <div class="footcon latest">
+            <h2>News:</h2>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Elementum integer enim neque volutpat ac tincidunt. Ac tortor vitae purus faucibus 
+          </div>
+       
+
+        <div class="footcon address">
+          <h2>Address</h2>
+          <p>219 NYC Down street</p>
+          <p>121-323-565</p>
+          <p>byte_bistro@info.com</p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div> 
+      </div>
+
+      <p id="links"><a href="https://bokarestaurantgroup.tripleseat.com/">Private dining</a> | 
+        <a href="#about">About</a> | 
+        <a href="./menu.html">Menu</a> | 
+        <a href="#contact">Contact</a> |
+        <a href="#reserve">Reserve</a>
+     </p>
+     <p id="copy"> © 2023 ByteBistro, LLC. All Rights Reserved</p>
+    </section>
+
+     
+      <script src="./script.js"></script>
+</body>
+</html>
